@@ -1,0 +1,112 @@
+* {
+  margin: 0; /*sayfaya eklenen bütün elementlerin margin ve padding i 0 olsun istedik */
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+}
+.navbar {
+  background-color: #1d2226;
+  padding: 5px;
+}
+.navbar > ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar > ul > li > a {
+  color: #f0f0f0;
+}
+.navbar > ul > li > img {
+  border-radius: 50%;
+  width: 25px;
+}
+
+/* about-me kısmı baslangic */
+.about-me {
+  margin-top: 20px;
+  color: #f0f0f0;
+}
+.about-me > .container > .light-div {
+  background-color: #f0f0f0;
+  position: absolute; /**/
+  top: 0;
+  width: 100%;
+  height: 95px;
+
+  z-index: 1;
+}
+
+.about-me > .container {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* padding: 15%; */
+  background-color: #1d2226;
+  position: relative; /*kapsayıcı div özellikleri */
+}
+.about-me > .container > img {
+  border-radius: 65%;
+  width: 25%;
+  z-index: 2;
+
+  margin-bottom: 15px;
+}
+.send-post {
+  display: flex;
+  flex-direction: column;
+  background-color: #1d2226;
+  margin-top: 15px;
+  padding: 15px 0;
+}
+.send-post > .send-info {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+}
+.send-post > .send-info > img {
+  border-radius: 95px;
+  width: 10%;
+}
+.send-post > .send-info > input {
+  width: 80%;
+  height: 15px;
+  border-radius: 45px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #f0f0f0;
+}
+
+.send-post > .button-4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.send-post > .button-4 > button {
+  background-color: transparent;
+  color: #f0f0f0;
+  border: none;
+  margin-bottom: 5px;
+}
+
+.fa-image {
+  color: rgb(34, 0, 255) !important;
+}
+
+.fa-video {
+  color: green;
+}
+.fa-calendar-day {
+  color: rgba(196, 196, 17, 0.795);
+}
+.fa-file-lines {
+  color: rgb(240, 78, 78);
+}

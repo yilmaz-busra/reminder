@@ -1,6 +1,7 @@
 * {
   margin: 0; /*sayfaya eklenen bütün elementlerin margin ve padding i 0 olsun istedik */
   padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 body {
@@ -109,4 +110,57 @@ body {
 }
 .fa-file-lines {
   color: rgb(240, 78, 78);
+}
+
+/* post css */
+.posts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  background-color: #1d2226;
+  color: #f0f0f0;
+  padding: 15px 0;
+}
+.posts > .post-info > .post-about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.posts > .post-info > .post-about > .post-close {
+  margin-left: auto;
+}
+
+.posts > .post-info > .post-about > img {
+  width: 10%;
+}
+
+.posts > .post-img > img {
+  margin-top: 25px;
+  width: 100%;
+}
+
+/* Etkileşim Kısmı */
+
+.post-buttons {
+  background-color: #1d2226;
+}
+.post-buttons > .heart > a {
+  color: #f0f0f0;
+}
+.post-buttons > .buttons-4 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.post-buttons > .buttons-4 > button {
+  background-color: transparent;
+  border: none;
+  color: #f0f0f0;
+  width: 25%;
+  padding: 15px;
+}
+
+.post-buttons > .buttons-4 > button:hover {
+  background-color: #d9e2ea3c;
+  cursor: pointer;
 }
